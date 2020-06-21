@@ -27,7 +27,6 @@ export default class BoxText {
             throw new Error('Must set text.');
         }
 
-        const chars = text.toUpperCase().split('');
         const modes = new Array<number>(chars.length).fill(CHAR_MODE.WHITE);
         modes[0] = CHAR_MODE.FIRST;
         // 随机选择标红的字，一定范围内只允许出现一次
